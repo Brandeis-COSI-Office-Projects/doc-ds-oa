@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/doc-ds-oa/"
 languageCode = "en-us"
 title = "Documentation of Alumni Data Analytics Project for Office Assistants"
 theme = "book"
