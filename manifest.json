@@ -1,14 +1,14 @@
 {
-  "name": "Documentation",
-  "short_name": "Documentation",
-  "start_url": "/doc-ds-oa/",
-  "scope": "/doc-ds-oa/",
+  "name": "Documentation of Alumni Data Analytics Project for Office Assistants",
+  "short_name": "Documentation of Alumni Data Analytics Project for Office Assistants",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/doc-ds-oa/favicon.svg",
+      "src": "/favicon.svg",
       "sizes": "512x512"
     }
   ]
