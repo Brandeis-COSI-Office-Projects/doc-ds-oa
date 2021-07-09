@@ -3,39 +3,37 @@ title: Introduction
 type: docs
 ---
 
-# Acerbo datus maxime
+# Introduction
 
+Hi! I'm [Tianqi Zhao](https://tianqizhao.com). I'm one of the developers/office assistants of the Alumni Data Analytics Project. 
+
+In order to help you familiarize with the tasks and the codes faster, I wrote this documentation to explain what the entire project is, how to start programming, how the codes are structured, and how to contribute to this documentation page.
+
+If you have any questions after reading this documentation, feel free to reach out to me by email: louiszhao0517@gmail.com and cc to tz2529@columbia.edu
+
+Alright, *let's get started!*
+
+<!--
 {{< columns >}}
 ## Astris ipse furtiva
 
 Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
 olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies -->
 
-<--->
+<!-- <---> -->
 
-## Suis quot vota
+<!-- ## Suis quot vota
 
 Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
 miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
 nunc! Fragosis suae dextra geruntur functus vulgata.
-{{< /columns >}}
+{{< /columns >}} -->
 
+## Contributors
 
-## Tempora nisi nunc
+Tianqi Zhao (louiszhao0517@gmail.com; tianqizhao@brandeis.edu)
 
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
+## Data Privacy Statement
 
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
-
-## Locis suis novi cum suoque decidit eadem
-
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
+This project belongs to the Department of Computer Science at Brandeis University. You should not distribute any of the contents to anyone outside of the organization, especially the original dataset which contains alumni information.

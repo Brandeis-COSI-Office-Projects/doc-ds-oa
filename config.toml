@@ -1,6 +1,6 @@
-baseURL = "/doc-ds-oa/"
+baseURL = ""
 languageCode = "en-us"
-title = "Documentation"
+title = "Documentation of Alumni Data Analytics Project for Office Assistants"
 theme = "book"
 
 
