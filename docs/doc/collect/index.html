@@ -1,0 +1,271 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Steps to collect the data #  File format #  In the beginning of the project, you might be given a Google Sheet or a CSV file to start. If it&rsquo;s a Google Sheet, just stick to it. If it&rsquo;s a CSV file, uploading it to Google Sheet and edit online for easier sharing and collaborating.
+Example of the file #  Whether it&rsquo;s a Google Sheet or CSV, it might look like this:">
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Collect">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="/doc-ds-oa/docs/doc/collect/">
+<title>Collect | Documentation of Alumni Data Analytics Project for Office Assistants</title>
+<link rel=manifest href=/doc-ds-oa/manifest.json>
+<link rel=icon href=/doc-ds-oa/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc-ds-oa/book.min.57f7f660871517a5bfcfb5e2de853d806f7e34d94ebd5f3f3bad62e9ddbae209.css>
+<script defer src=/doc-ds-oa/flexsearch.min.js></script>
+<script defer src=/doc-ds-oa/en.search.min.9161f6a1e59c48e0d9b1977ec76678971c2be52b440dd254b7223f6b15b42934.js></script>
+<link rel=alternate type=application/rss+xml href=/doc-ds-oa/docs/doc/collect/index.xml title="Documentation of Alumni Data Analytics Project for Office Assistants">
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/doc-ds-oa/><span>Documentation of Alumni Data Analytics Project for Office Assistants</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li class=book-section-flat>
+<a href=/doc-ds-oa/docs/doc/>Navigate</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/collect/ class=active>Collect</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c4b13ca2cecc6470f6b45216971fd901 class=toggle>
+<label for=section-c4b13ca2cecc6470f6b45216971fd901 class="flex justify-between">
+<a role=button>Processing</a>
+</label>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/quickstart/>Quickstart</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/>Functions</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/process/>Process</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/clean/>Clean</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/exit/>Exit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/code-structure/>Code Structure</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/contribute/>Contribute</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/doc-ds-oa/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Collect</strong>
+<label for=toc-control>
+<img src=/doc-ds-oa/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#file-format>File format</a></li>
+<li><a href=#example-of-the-file>Example of the file</a></li>
+<li><a href=#how-to-collect-the-data>How to collect the data</a></li>
+<li><a href=#how-to-download-the-data-for-processing>How to download the data for processing</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=steps-to-collect-the-data>
+Steps to collect the data
+<a class=anchor href=#steps-to-collect-the-data>#</a>
+</h1>
+<h2 id=file-format>
+File format
+<a class=anchor href=#file-format>#</a>
+</h2>
+<p>In the beginning of the project, you might be given a Google Sheet or a CSV file to start. If it&rsquo;s a Google Sheet, just stick to it. If it&rsquo;s a CSV file, uploading it to Google Sheet and edit online for easier sharing and collaborating.</p>
+<h2 id=example-of-the-file>
+Example of the file
+<a class=anchor href=#example-of-the-file>#</a>
+</h2>
+<p>Whether it&rsquo;s a Google Sheet or CSV, it might look like this:</p>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>FIRST</th>
+<th>LAST</th>
+<th>&mldr;</th>
+<th>Initials</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>personAFirstName</td>
+<td>personALastName</td>
+<td>&mldr;</td>
+<td>TZ</td>
+<td>First Pass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>personBFirstName</td>
+<td>personBLastName</td>
+<td>&mldr;</td>
+<td>CH</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+<td>&mldr;</td>
+</tr>
+</tbody>
+</table>
+<p>In the table, some columns looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Job1</th>
+<th>Job 1 years of service</th>
+<th>Job2</th>
+<th>Job 2 years of service</th>
+<th>&mldr;</th>
+<th>Job 10</th>
+<th>Job 10 years of service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Senior Principal Engineer</td>
+<td>7y5m</td>
+<td>Product Marketing</td>
+<td>12y</td>
+<td>&mldr;</td>
+<td>Senior Software Engineer</td>
+<td>3y10m</td>
+</tr>
+<tr>
+<td>VP Software Development</td>
+<td>2y7m</td>
+<td>VP System Development</td>
+<td>2y</td>
+<td>&mldr;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>These are the columns that you should care about.</p>
+<h2 id=how-to-collect-the-data>
+How to collect the data
+<a class=anchor href=#how-to-collect-the-data>#</a>
+</h2>
+<p>You will presumably be asked to collect the data from LinkedIn. There are two things you should notice on:</p>
+<ul>
+<li>When you are copying job titles, <strong>make sure it&rsquo;s copied to the correct cell</strong>. E.g., job titles like &ldquo;Software Engineer&rdquo; should not reside in column &ldquo;Job 2 years of service&rdquo;.</li>
+<li>When you are copying job duration/years of service, make sure to <strong>reformat the time</strong> to <code>"xyxm"</code> format. <code>"xyxm"</code> represents x amount of years and x amount of months. E.g., 3 years 4 months will be represented as &ldquo;3y4m&rdquo; and 12 years will be represented as &ldquo;12y&rdquo;</li>
+</ul>
+<p>For example, <em><strong>none</strong></em> of the following time format is accepted:</p>
+<table>
+<thead>
+<tr>
+<th>Job1</th>
+<th>Job 1 years of service</th>
+<th>Job2</th>
+<th>Job 2 years of service</th>
+<th>&mldr;</th>
+<th>Job 10</th>
+<th>Job 10 years of service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Senior Principal Engineer</td>
+<td>7 years 5 months</td>
+<td>Product Marketing</td>
+<td>12 yrs</td>
+<td>&mldr;</td>
+<td>Senior Software Engineer</td>
+<td>3 yr 10 mos</td>
+</tr>
+<tr>
+<td>VP Software Development</td>
+<td>2 y 7 m</td>
+<td>VP System Development</td>
+<td>2 years</td>
+<td>&mldr;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="book-hint danger">
+Keeping the time format exactly as directed is very important! Data processing and cleaning procedure will not check time format and it uses exactly <code>"xyxm"</code> format to proceed.
+</blockquote>
+<h2 id=how-to-download-the-data-for-processing>
+How to download the data for processing
+<a class=anchor href=#how-to-download-the-data-for-processing>#</a>
+</h2>
+<ul>
+<li>If you are in Google Sheet, download it as a <code>csv</code> file, rename it as <code>raw.csv</code>.</li>
+<li>If you are in a csv file, rename it as <code>raw.csv</code></li>
+</ul>
+<p>Then, upload & replace the <code>raw.csv</code> in the <a href=https://github.com/Brandeis-COSI-Office-Projects/ds-raw-data/tree/main/data>raw data repository</a>.</p>
+<p>Lastly, download the <code>data</code> folder in the <a href=https://github.com/Brandeis-COSI-Office-Projects/ds-raw-data/tree/main/data>raw data repository</a> as directed and put the <code>data</code> folder inside your cloned <a href=https://github.com/Brandeis-COSI-Office-Projects/alumni-analytics>alumni-analytics</a> directory.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#file-format>File format</a></li>
+<li><a href=#example-of-the-file>Example of the file</a></li>
+<li><a href=#how-to-collect-the-data>How to collect the data</a></li>
+<li><a href=#how-to-download-the-data-for-processing>How to download the data for processing</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

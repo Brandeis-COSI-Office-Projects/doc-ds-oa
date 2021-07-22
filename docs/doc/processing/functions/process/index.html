@@ -1,0 +1,295 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Process existing/new data #  Process, as the name suggests, is processing and cleaning all the data you have. You need to have the data folder residing in the directory in order to proceed.
+Two situations #  There are two situations leading you to encounter different things:
+ When you just want to process the old data to see what the result looks like; When you have new grads' information to process  Let&rsquo;s start with the easier one: old data.">
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Process">
+<meta property="og:description" content="Process existing/new data #  Process, as the name suggests, is processing and cleaning all the data you have. You need to have the data folder residing in the directory in order to proceed.
+Two situations #  There are two situations leading you to encounter different things:
+ When you just want to process the old data to see what the result looks like; When you have new grads' information to process  Let&rsquo;s start with the easier one: old data.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/doc-ds-oa/docs/doc/processing/functions/process/"><meta property="article:section" content="docs">
+<title>Process | Documentation of Alumni Data Analytics Project for Office Assistants</title>
+<link rel=manifest href=/doc-ds-oa/manifest.json>
+<link rel=icon href=/doc-ds-oa/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc-ds-oa/book.min.57f7f660871517a5bfcfb5e2de853d806f7e34d94ebd5f3f3bad62e9ddbae209.css>
+<script defer src=/doc-ds-oa/flexsearch.min.js></script>
+<script defer src=/doc-ds-oa/en.search.min.9161f6a1e59c48e0d9b1977ec76678971c2be52b440dd254b7223f6b15b42934.js></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/doc-ds-oa/><span>Documentation of Alumni Data Analytics Project for Office Assistants</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li class=book-section-flat>
+<a href=/doc-ds-oa/docs/doc/>Navigate</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/collect/>Collect</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c4b13ca2cecc6470f6b45216971fd901 class=toggle checked>
+<label for=section-c4b13ca2cecc6470f6b45216971fd901 class="flex justify-between">
+<a role=button>Processing</a>
+</label>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/quickstart/>Quickstart</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/>Functions</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/process/ class=active>Process</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/clean/>Clean</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/exit/>Exit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/code-structure/>Code Structure</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/contribute/>Contribute</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/doc-ds-oa/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Process</strong>
+<label for=toc-control>
+<img src=/doc-ds-oa/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#two-situations>Two situations</a>
+<ul>
+<li><a href=#just-process-the-old-data>Just process the old data</a></li>
+<li><a href=#dealing-with-new-data>Dealing with new data</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=process-existingnew-data>
+Process existing/new data
+<a class=anchor href=#process-existingnew-data>#</a>
+</h1>
+<p>Process, as the name suggests, is processing and cleaning all the data you have. You need to have the <code>data</code> folder residing in the directory in order to proceed.</p>
+<h2 id=two-situations>
+Two situations
+<a class=anchor href=#two-situations>#</a>
+</h2>
+<p>There are two situations leading you to encounter different things:</p>
+<ol>
+<li>When you just want to process the old data to see what the result looks like;</li>
+<li>When you have new grads' information to process</li>
+</ol>
+<p>Let&rsquo;s start with the easier one: <em><strong>old data</strong></em>.</p>
+<h3 id=just-process-the-old-data>
+Just process the old data
+<a class=anchor href=#just-process-the-old-data>#</a>
+</h3>
+<p>After typing <code>p</code>, the following things will pop up:</p>
+<pre><code>&gt;&gt; Entering process mode...
+
+- We are looking for raw.csv and algorithm.json file
+- Found!
+
+- Run a preprocessing step to make sure the data format is correct
+    &gt;&gt; There are 1045 out of 1430 lines labelled as &quot;First Pass&quot;,
+    &gt;&gt;	so 1045 lines will be passed to the next round of real processing.
+- Preprocessing finished!
+
+[!Important] Please be aware that we will not check time format.
+- Make sure all of your job time is formatted as: xyxm or xy
+    - [Hint: xyxm represents x amount of years and x amount of months. E.g., 3y4m]
+
+- Begin real processing
+- Processed!
+
+......
+
+- Whole process finished!
+- Please view result/Jul-21-2021-926 folder to see the processed results
+- You can find cache files at cache/Jul-21-2021-926 folder
+
+[ -- See you next time! -- ]
+You can find console log file in log/Jul-21-2021-926.txt
+</code></pre>
+<p>And the following folders will be generated:</p>
+<pre><code>cache/
+log/
+result/
+</code></pre>
+<h4 id=result-json>
+Result json
+<a class=anchor href=#result-json>#</a>
+</h4>
+<p>Let&rsquo;s go to the <code>result</code> folder. That&rsquo;s where the final result resides in. There may be many <code>json</code> files if you run the program multiple times. Find the correct one by checking the file name for this run. In my case, it&rsquo;s <code>Jul-21-2021-926</code>.</p>
+<p>You can just use this <code>json</code> for visualization or first convert it to <code>csv</code> and then do visualization. It has been processed and cleaned and ready for use.</p>
+<blockquote>
+<p>You can use <strong>clean function</strong> to clean up the <code>result</code> folder.</p>
+</blockquote>
+<h4 id=cache>
+Cache
+<a class=anchor href=#cache>#</a>
+</h4>
+<p>In the cache folder, there are a bunch of files that are generated during data processing. Normally, the folder should contain the following files:</p>
+<pre><code>merged_processed.json
+merged_sorted_title.json
+merged_title.json
+processed.json
+sorted_title.json
+title.json
+</code></pre>
+<p>These files are:</p>
+<dl>
+<dt>processed.json</dt>
+<dd>the json file after initial extracting from csv; the version without processing and cleaning</dd>
+<dt>title.json</dt>
+<dd>all the job titles with their occurrences, without processing and cleaning</dd>
+<dt>sorted_title.json</dt>
+<dd>all the job titles sorted by their occurrences, without processing and cleaning</dd>
+<dt>merged_processed.json</dt>
+<dd>the dictionary data file after merging job titles with the algorithm</dd>
+<dt>merged_title.json</dt>
+<dd>all the job titles with their occurrences, after merging</dd>
+<dt>merged_sorted_title</dt>
+<dd>all the job titles sorted by their occurrences, after merging</dd>
+</dl>
+<blockquote>
+<p>You can use <strong>clean function</strong> to clean up the <code>cache</code> folder, as they are not quite important for visualization.</p>
+</blockquote>
+<h4 id=log>
+Log
+<a class=anchor href=#log>#</a>
+</h4>
+<p><code>log/</code> contains all the output in console in case you forget about anything and you have closed the terminal.</p>
+<blockquote>
+<p>You can use <strong>clean function</strong> to clean up the <code>log</code> folder, as they are not quite important for visualization, only for your own purpose.</p>
+</blockquote>
+<h3 id=dealing-with-new-data>
+Dealing with new data
+<a class=anchor href=#dealing-with-new-data>#</a>
+</h3>
+<p>If you have a bunch of new grads' information to process, you will encounter the &ldquo;deal with new data&rdquo; situation. Your console output might look like this:</p>
+<pre><code>&gt;&gt; Entering process mode...
+
+- We are looking for raw.csv and algorithm.json file
+- Found!
+
+- Run a preprocessing step to make sure the data format is correct
+    &gt;&gt; There are 1046 out of 1431 lines labelled as &quot;First Pass&quot;,
+    &gt;&gt;	so 1046 lines will be passed to the next round of real processing.
+
+[!Warning] We have seen some job titles that have not been seen/found/added to our algorithm.
+
+We have put all unseen job titles in pending/unseen_titles.txt
+    1. Open pending/unseen_titles.txt and data/algorithm.json
+    2. Determine which category(key) does each unseen job title in unseen_titles.txt belong to in algorithm.json
+    3. Copy each unseen job title to the value array of corresponding category(key) in algorithm.json
+    4. Rerun the program
+[ -- See you next time! -- ]
+You can find console log file in log/Jul-21-2021-912.txt
+</code></pre>
+<p>Most likely there will be some new, unseen job titles that are not included in the algorithm, like &ldquo;professional dog walker&rdquo; or &ldquo;Java and Python and C++ developer&rdquo;. You should follow these steps to refine the algorithm:</p>
+<ol>
+<li>Open <code>pending/unseen_titles.txt</code> file. It has a list of unseen job titles that you will add to the algorithm.</li>
+<li>Open <code>data/algorithm.json</code>. The keys are job titles to stay because they are the most descriptive and have the most occurrences. The values are job titles to be merged because they are too subtle and only occur once or twice.
+<blockquote class="book-hint info">
+<p>For example, key-value pair like:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#e6db74>&#34;Software Engineer&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> [
+    <span style=color:#e6db74>&#34;Java Developer&#34;</span>,
+    <span style=color:#e6db74>&#34;Software Architect&#34;</span>
+    <span style=color:#960050;background-color:#1e0010>......</span>
+]
+</code></pre></div><p>Job titles like <code>Java Developer</code> and <code>Software Architect</code> will be replaced by <code>Software Engineer</code> because <code>Software Engineer</code> is more dominant in terms of occurrences and can describe what these two titles basically do.
+For a more detailed explanation please visit <a href=https://brandeis-cosi-office-projects.github.io/doc-ds-staff/docs/doc/process/clean-data/>The Documentation for Staff</a>.</p>
+</blockquote>
+</li>
+<li>Determine which category(key) does each unseen job titles fall into. E.g., &ldquo;Linux Engineer&rdquo; falls into &ldquo;Software Engineer&rdquo; and &ldquo;Marketing Research&rdquo; falls into &ldquo;Marketing&rdquo;.</li>
+<li>Paste the unseen job title inside the value array of the corresponding category(key).
+<blockquote class="book-hint info">
+<p>E.g., if previously the <code>algorithm.json</code> looks like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#e6db74>&#34;Software Engineer&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> [
+    <span style=color:#e6db74>&#34;Software Developer&#34;</span>,
+    <span style=color:#e6db74>&#34;Developer&#34;</span>,
+    <span style=color:#960050;background-color:#1e0010>......</span>
+]
+<span style=color:#960050;background-color:#1e0010>......</span>
+</code></pre></div><p>And you determine that <code>Coder</code> also fall into this category. After pasting, it should look like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#e6db74>&#34;Software Engineer&#34;</span><span style=color:#960050;background-color:#1e0010>:</span> [
+    <span style=color:#e6db74>&#34;Software Developer&#34;</span>,
+    <span style=color:#e6db74>&#34;Developer&#34;</span>,
+    <span style=color:#e6db74>&#34;Coder&#34;</span>,
+    <span style=color:#960050;background-color:#1e0010>......</span>
+]
+<span style=color:#960050;background-color:#1e0010>......</span>
+</code></pre></div>
+</blockquote>
+</li>
+<li>Save</li>
+</ol>
+<p>After you finish with merging all the job titles, run <code>process</code> command again and watch what happens.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#two-situations>Two situations</a>
+<ul>
+<li><a href=#just-process-the-old-data>Just process the old data</a></li>
+<li><a href=#dealing-with-new-data>Dealing with new data</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="The code structure #  Although the code are well-documented and structured, it is still worth explaining the overall structure for you to familiarize.
+code directory #  The code directory looks like this:
+. ├── clean.py ├── console_controller.py ├── main.py ├── preprocessing.py ├── process.py └── title_merge.py   clean.py It will merge job titles based on the algorithm and unify time format to be xx.xx years. console_controller.py It controls all the console output & recording.">
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content>
+<meta property="og:description" content="The code structure #  Although the code are well-documented and structured, it is still worth explaining the overall structure for you to familiarize.
+code directory #  The code directory looks like this:
+. ├── clean.py ├── console_controller.py ├── main.py ├── preprocessing.py ├── process.py └── title_merge.py   clean.py It will merge job titles based on the algorithm and unify time format to be xx.xx years. console_controller.py It controls all the console output & recording.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/doc-ds-oa/docs/doc/processing/code-structure/"><meta property="article:section" content="docs">
+<title>Code Structure | Documentation of Alumni Data Analytics Project for Office Assistants</title>
+<link rel=manifest href=/doc-ds-oa/manifest.json>
+<link rel=icon href=/doc-ds-oa/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/doc-ds-oa/book.min.57f7f660871517a5bfcfb5e2de853d806f7e34d94ebd5f3f3bad62e9ddbae209.css>
+<script defer src=/doc-ds-oa/flexsearch.min.js></script>
+<script defer src=/doc-ds-oa/en.search.min.9161f6a1e59c48e0d9b1977ec76678971c2be52b440dd254b7223f6b15b42934.js></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/doc-ds-oa/><span>Documentation of Alumni Data Analytics Project for Office Assistants</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li class=book-section-flat>
+<a href=/doc-ds-oa/docs/doc/>Navigate</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/collect/>Collect</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c4b13ca2cecc6470f6b45216971fd901 class=toggle checked>
+<label for=section-c4b13ca2cecc6470f6b45216971fd901 class="flex justify-between">
+<a role=button>Processing</a>
+</label>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/quickstart/>Quickstart</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/>Functions</a>
+<ul>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/process/>Process</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/clean/>Clean</a>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/functions/exit/>Exit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/processing/code-structure/ class=active>Code Structure</a>
+</li>
+</ul>
+</li>
+<li>
+<a href=/doc-ds-oa/docs/doc/contribute/>Contribute</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/doc-ds-oa/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Code Structure</strong>
+<label for=toc-control>
+<img src=/doc-ds-oa/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#code-directory>code directory</a></li>
+<li><a href=#data-directory>data directory</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=the-code-structure>
+The code structure
+<a class=anchor href=#the-code-structure>#</a>
+</h1>
+<p>Although the code are well-documented and structured, it is still worth explaining the overall structure for you to familiarize.</p>
+<h2 id=code-directory>
+code directory
+<a class=anchor href=#code-directory>#</a>
+</h2>
+<p>The <code>code</code> directory looks like this:</p>
+<pre><code>.
+├── clean.py
+├── console_controller.py
+├── main.py
+├── preprocessing.py
+├── process.py
+└── title_merge.py
+</code></pre>
+<dl>
+<dt>clean.py</dt>
+<dd>It will merge job titles based on the algorithm and unify time format to be xx.xx years.</dd>
+<dt>console_controller.py</dt>
+<dd>It controls all the console output & recording.</dd>
+<dt>main.py</dt>
+<dd>The execution program that will run processing and cleaning.</dd>
+<dt>preprocessing.py</dt>
+<dd>Run the preprocessing step to make sure the data format is correct (only checks job titles).</dd>
+<dt>process.py</dt>
+<dd>Extract the json information from csv file for cleaning.</dd>
+<dt>title_merge.py</dt>
+<dd>Algorithm of merging job titles.</dd>
+</dl>
+<h2 id=data-directory>
+data directory
+<a class=anchor href=#data-directory>#</a>
+</h2>
+<p>Additionally, the <code>data</code> folder looks like this:</p>
+<pre><code>.
+├── algorithm.json
+└── raw.csv
+</code></pre>
+<dl>
+<dt>algorithm.json</dt>
+<dd>It contains the algorithm to merge job titles.</dd>
+<dt>raw.csv</dt>
+<dd>It contains the raw alumni data.</dd>
+</dl>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#code-directory>code directory</a></li>
+<li><a href=#data-directory>data directory</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
